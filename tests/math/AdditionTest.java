@@ -39,6 +39,15 @@ public class AdditionTest {
       assertEquals(new Long (3), op.soustraire(new Long(1),new Long(4)));
    }
    
+   @Test
+   public void testCalculer2() throws Exception {
+	  final Long val1= 1L;
+	  final Long val2=3L;
+	  Long result= val1+val2;
+      assertEquals("verifier la methode additionner", result,
+                   op.calculer(val1,val2));
+   }
+ 
    
 }
 
